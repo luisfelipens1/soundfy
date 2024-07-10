@@ -1,0 +1,6 @@
+@import './utilidades/global.css';
+@import './utilidades/tipografia.css';
+@import './utilidades/cores.css';
+
+@import './componentes/header.css';
+@import './componentes/botoes.css';
