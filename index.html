@@ -13,9 +13,9 @@
 
     <!-- <script>document.documentElement.classList.add("js");</script> -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <header class="header container">
@@ -23,21 +23,23 @@
             <img src="./img/logo-primaria.svg" alt="Soundfy" class="header-logo" width="161" height="40">
         </a>
 
-        <button class="btn-mobile" id="btn-mobile">
-            <span>menu</span>
+        <button class="btn-mobile" id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="header-nav" aria-expanded="false">
+            <span class="icone-menu"></span>
         </button>
 
-        <nav class="header-nav">
-            <ul class="nav-menu paragrafo c-11">
+        <nav class="header-nav" id="header-nav">
+            <ul class="nav-menu paragrafo c-11" role="menu">
                 <li><a href="./planos.html" class="menu-link">Planos</a></li>
                 <li><a href="./recursos.html" class="menu-link">Recursos</a></li>
                 <li><a href="./contato.html" class="menu-link">Contato</a></li>
             </ul>
             <div class="conta">
-                <a href="./login.html" class="botao outline">Entrar</a>
-                <a href="./cadastro.html" class="botao primario">Cadastre-se</a>
+                <a href="./login.html" class="botao outline" id="login">Entrar</a>
+                <a href="./cadastro.html" class="botao primario" id="cadastro">Cadastre-se</a>
             </div>
         </nav>
     </header>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

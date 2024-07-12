@@ -1,4 +1,5 @@
 .botao{
+    max-width: max-content;
     display: inline-block;
     padding: 12px 24px;
     border-radius: 32px;
@@ -33,4 +34,10 @@
 .botao.outline:hover{
     background-color: var(--c-2);
     border-color: transparent;
+}
+
+@media(max-width: 576px){
+    .botao{
+        padding: 10px 20px;
+    }
 }
