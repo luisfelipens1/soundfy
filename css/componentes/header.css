@@ -90,6 +90,11 @@
         position: relative;
     }
 
+    .btn-mobile.ativo{
+        position: fixed;
+        right: 60px;
+    }
+
     .btn-mobile.ativo .icone-menu{
         border-top-color: transparent;
     }
@@ -154,6 +159,10 @@
     .header{
         padding: 20px 40px;
     }
+
+    .btn-mobile.ativo{
+        right: 40px;
+    }
 }
 
 @media(max-width: 576px){
@@ -163,5 +172,9 @@
 
     .header-logo{
         width: 130px;
+    }
+
+    .btn-mobile.ativo{
+        right: 16px;
     }
 }

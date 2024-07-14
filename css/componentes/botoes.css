@@ -1,6 +1,8 @@
 .botao{
     max-width: max-content;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     padding: 12px 24px;
     border-radius: 32px;
     font: 700 16px/1.3 'DM Sans', sans-serif;
@@ -39,5 +41,6 @@
 @media(max-width: 576px){
     .botao{
         padding: 10px 20px;
+        font-size: 14px;
     }
 }
