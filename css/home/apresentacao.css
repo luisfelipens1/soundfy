@@ -1,0 +1,153 @@
+.apresentacao-bg{
+    background-color: var(--b-1);
+}
+
+.apresentacao{
+    padding: 80px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.apresentacao-telas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.apresentacao-telas .tela-img:last-child{
+    padding-top: 80px;
+}
+
+.apresentacao-titulo{
+    max-width: 14ch; 
+    margin-bottom: 32px;
+}
+
+.apresentacao-texto{
+    max-width: 33ch;
+    margin-bottom: 48px;
+}
+
+.dados{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.dado{
+    border-right: 2px solid var(--b);
+    padding: 0 32px;
+}
+
+.dado:first-child{
+    padding-left: 0;
+}
+
+.dado:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+
+.dado-titulo{
+    display: block;
+    margin-bottom: 4px;
+}
+
+.dado-titulo::first-letter{
+    color: var(--p);
+}
+
+.botoes-download{
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width: 1200px){
+    .apresentacao{
+        padding: 60px 80px;
+        gap: 32px;
+    }
+
+    .apresentacao-titulo{
+        font-size: 58px;
+    }
+}
+
+@media(max-width: 992px){
+    .apresentacao{
+        padding: 60px;
+        grid-template-columns: 1fr;
+    }
+
+    .apresentacao-titulo{
+        max-width: 20ch;
+        font-size: 46px;
+        margin-bottom: 24px;
+    }
+
+    .apresentacao-texto{
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .dados{
+        flex-wrap: wrap;
+    }
+
+    .dado{
+        padding: 16px 0;
+        border-right: none;
+    }
+}
+
+@media(max-width: 768px){
+    .apresentacao{
+        padding: 40px;
+        grid-template-columns: 1fr;
+    }  
+
+    .apresentacao-telas{
+        gap: 0;
+    }
+
+    .tela-img{
+        position: relative;
+    }
+
+    .apresentacao-telas .tela-img:last-child{
+        padding-top: 20px;
+        transform: rotate(4deg);
+        margin-right: 12px;
+    }
+
+    .tela-img:first-child{
+        transform: rotate(-4deg);
+        margin-left: 12px;
+    }
+}
+
+@media(max-width: 576px){
+    .apresentacao{
+        padding: 40px 16px;
+    }
+
+    .apresentacao-titulo{
+        max-width: 100%;
+        font-size: 34px;
+    }
+
+    .apresentacao-texto{
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .dados{
+        margin-bottom: 12px;
+    }
+
+    .botoes-download{
+        gap: 12px;
+    }
+}

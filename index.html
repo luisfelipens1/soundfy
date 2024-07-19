@@ -13,9 +13,9 @@
 
     <!-- <script>document.documentElement.classList.add("js");</script> -->
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header container">
@@ -50,15 +50,73 @@
             </p>
             <a href="https://play.google.com/store/games?hl=pt_BR" class="botao primario" target="_blank">
                 BAIXE AGORA
-                <img src="./img/download.svg" alt="" width="28" height="28">
+                <img src="./img/icones/download.svg" alt="" width="28" height="28">
             </a>
         </div>
-        <picture class="introducao-img">
-            <source media="(max-width: 576px)" srcset="./img/home/home-mobile.jpg">
-            <source media="(max-width: 992px)" srcset="./img/home/home-tablet.jpg">           
-            <img src="./img/home/home.jpg" alt="Desfrute o melhor da música com o Soundfy" width="600" height="596">
-        </picture>
+        <div class="introducao-img">
+            <div class="img-decoracao">
+                <img src="./img/icones/headphone.svg" alt="" width="29" height="29">
+                Música para qualquer momento
+            </div>
+            <picture class="img-intro">
+                <source media="(max-width: 576px)" srcset="./img/fotos/home/hero-mobile.jpg">
+                <source media="(max-width: 992px)" srcset="./img/fotos/home/hero-tablet.jpg">           
+                <img src="./img/fotos/home/hero.jpg" alt="Desfrute o melhor da música com o Soundfy" width="600" height="596">
+            </picture>
+        </div>
     </main>
+
+    <article class="apresentacao-bg">
+        <div class="apresentacao container">
+            <div class="apresentacao-telas">
+                <picture class="tela-img">
+                    <source media="(max-width: 576px)" srcset="./img/telas/home-mobile.png">
+                    <source media="(max-width: 992px)" srcset="./img/telas/home-tablet.png">
+                    <img src="./img/telas/home.png" alt="" width="538" height="1100">
+                </picture>
+                <picture class="tela-img">
+                    <source media="(max-width: 576px)" srcset="./img/telas/player-mobile.png">
+                    <source media="(max-width: 992px)" srcset="./img/telas/player-tablet.png">
+                    <img src="./img/telas/player.png" alt="" width="538" height="1100">
+                </picture>
+            </div>
+
+            <div class="apresentacao-conteudo">
+                <div class="apresentacao-header">
+                    <h2 class="apresentacao-titulo titulo-1 c-1">
+                        Aproveite suas <span class="p">músicas, álbuns e artistas</span> favoritos.
+                    </h2>
+                    <p class="apresentacao-texto paragrafo-g c-4">
+                        Explore uma biblioteca interminável de músicas, álbuns e artistas favoritos em um só lugar. Sua trilha sonora perfeita está apenas a um clique.
+                    </p>
+                </div>
+
+                <div class="dados">
+                    <div class="dado">
+                        <span class="dado-titulo subtitulo-1 c-1">+100 milhões</span>
+                        <p class="dado-descricao paragrafo-p c-5">Usuários ativos em todo o mundo</p>
+                    </div>
+                    <div class="dado">
+                        <span class="dado-titulo subtitulo-1 c-1">+5 milhões</span>
+                        <p class="dado-descricao paragrafo-p c-5">Artistas cadastrados na nossa plataforma</p>
+                    </div>
+                    <div class="dado">
+                        <span class="dado-titulo subtitulo-1 c-1">+60 milhões</span>
+                        <p class="dado-descricao paragrafo-p c-5">De assinaturas em nossos planos</p>
+                    </div>
+                </div>
+
+                <div class="botoes-download">
+                    <a href="https://play.google.com/store/apps?hl=pt_BR" target="_blank">
+                        <img src="./img/icones/botoes/google.svg" alt="Google Play" width="161" height="51">
+                    </a>
+                    <a href="https://www.apple.com/br/store" target="_blank">
+                        <img src="./img/icones/botoes/apple.svg" alt="Apple Store" width="161" height="51">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
 
     <script src="./js/script.js"></script>
 </body>
