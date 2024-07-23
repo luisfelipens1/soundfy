@@ -100,13 +100,6 @@
         padding: 16px 0;
         border-right: none;
     }
-}
-
-@media(max-width: 768px){
-    .apresentacao{
-        padding: 40px;
-        grid-template-columns: 1fr;
-    }  
 
     .apresentacao-telas{
         gap: 0;
@@ -126,6 +119,13 @@
         transform: rotate(-4deg);
         margin-left: 12px;
     }
+}
+
+@media(max-width: 768px){
+    .apresentacao{
+        padding: 40px;
+        grid-template-columns: 1fr;
+    }  
 }
 
 @media(max-width: 576px){

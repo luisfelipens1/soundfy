@@ -1,0 +1,163 @@
+.conectar-bg{
+    background-color: var(--b-1);
+}
+
+.conectar{
+    position: relative;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.conectar-heading{
+    margin-bottom: 48px;
+}
+
+.conectar-titulo{
+    max-width: 14ch;
+    margin-bottom: 32px;
+}
+
+.conectar-descricao{
+    max-width: 36ch;
+    margin-bottom: 20px;
+}
+
+.conectar-informacoes{
+    display: grid;
+    justify-items: space-between;
+    grid-template-columns: auto 1fr 1fr;
+}
+
+.img-usuarios{
+    display: flex;
+}
+
+.img-usuarios img{
+    border-radius: 50%;
+    border: 4px solid var(--b-1);
+    position: relative;
+}
+
+.img-usuarios img:nth-child(2){
+    left: -12px;
+}
+
+.img-usuarios img:nth-child(3){
+    left: -24px;
+}
+
+.img-usuarios img:nth-child(4){
+    left: -36px;
+}
+
+.conectar-img picture img{
+    position: absolute;
+    left: 55%;
+    bottom: 0;
+}
+
+@media(max-width: 1260px){
+    .conectar-img picture img{
+        left: 52%;
+    }
+
+    .conectar-informacoes{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .conectar-informacoes .dado{
+        padding: 0;
+        border: none;
+    }
+}
+
+@media(max-width: 1200px){
+    .conectar{
+        padding: 60px 80px;
+        gap: 32px;
+    }
+
+    .conectar-titulo{
+        font-size: 58px;
+    }
+}
+
+@media(max-width: 1180px){
+    .conectar-img picture img{
+        width: 500px;
+        left: 48%;
+    }
+}
+
+@media(max-width: 992px){
+    .conectar{
+        padding-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .conectar-titulo{
+        font-size: 46px;
+        margin-bottom: 24px;
+    }
+
+    .conectar-descricao{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .conectar-informacoes{
+        grid-template-columns: auto 1fr 1fr;
+    }
+
+    .conectar-img{
+        display: grid;
+        justify-items: center;
+    }
+
+    .conectar-img picture img{
+        position: initial;
+    }
+}
+
+@media(max-width: 768px){
+    .conectar{
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 576px){
+    .conectar{
+        padding-top: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 0;
+    }
+
+    .conectar-heading{
+        margin-bottom: 28px;
+    }
+
+    .conectar-titulo{
+        font-size: 36px;
+        max-width: 100%;
+    }
+
+    .conectar-descricao{
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .conectar-informacoes{
+        grid-template-columns: 1fr;
+    }
+}

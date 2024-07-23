@@ -27,7 +27,7 @@
             <span class="icone-menu"></span>
         </button>
 
-        <nav class="header-nav" id="header-nav">
+        <nav class="header-nav" id="header-nav" aria-label="primária">
             <ul class="nav-menu paragrafo c-11" role="menu">
                 <li><a href="./planos.html" class="menu-link">Planos</a></li>
                 <li><a href="./recursos.html" class="menu-link">Recursos</a></li>
@@ -66,7 +66,7 @@
         </div>
     </main>
 
-    <article class="apresentacao-bg">
+    <article class="apresentacao-bg" aria-labelledby="apresentacao-titulo">
         <div class="apresentacao container">
             <div class="apresentacao-telas">
                 <picture class="tela-img">
@@ -83,7 +83,7 @@
 
             <div class="apresentacao-conteudo">
                 <div class="apresentacao-header">
-                    <h2 class="apresentacao-titulo titulo-1 c-1">
+                    <h2 class="apresentacao-titulo titulo-1 c-1" id="apresentacao-titulo">
                         Aproveite suas <span class="p">músicas, álbuns e artistas</span> favoritos.
                     </h2>
                     <p class="apresentacao-texto paragrafo-g c-4">
@@ -118,7 +118,7 @@
         </div>
     </article>
 
-    <section class="beneficios container">
+    <section class="beneficios container" aria-label="Benefícios do App Soundfy">
         <div class="beneficios-heading">
             <h2 class="beneficios-titulo titulo-1 c-11">
                 <span class="p-4">Vantagens</span> de assinar nossos planos <span class="p-4">premium.</span>
@@ -164,6 +164,63 @@
         <a href="./planos.html" class="botao primario">VEJA NOSSOS PLANOS</a>
     </section>
 
+    <article class="conectar-bg" aria-labelledby="conectar-titulo">
+        <div class="conectar container">
+            <div class="conectar-conteudo">
+                <div class="conectar-heading">
+                    <h2 class="conectar-titulo titulo-1 c-1" id="conectar-titulo">
+                        <span class="p">Conecte-se e compartilhe</span> com seus amigos.
+                    </h2>
+                    <p class="conectar-descricao paragrafo-g c-4">
+                        Faça da música uma experiência compartilhada e conecte-se com os seus amigos para descobrir novas músicas incríveis juntos.
+                    </p>
+                    <a href="./login.html" class="botao secundario">CONECTE-SE</a>
+                </div>
+                <div class="conectar-informacoes">
+                    <div class="img-usuarios">
+                        <img src="./img/fotos/home/usuario-1.jpg" alt="" width="60" height="60">
+                        <img src="./img/fotos/home/usuario-2.jpg" alt="" width="60" height="60">
+                        <img src="./img/fotos/home/usuario-3.jpg" alt="" width="60" height="60">
+                        <img src="./img/fotos/home/usuario-4.jpg" alt="" width="60" height="60">
+                    </div>
+                    <div class="dado">
+                        <span class="dado-titulo subtitulo-1 c-1">+1 milhão</span>
+                        <p class="paragrafo-p c-5">De pessoas conectadas</p>
+                    </div>
+                    <div class="dado">
+                        <span class="dado-titulo subtitulo-1 c-1">+2 milhões</span>
+                        <p class="paragrafo-p c-5">De usuários compartilharam</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conectar-img">
+                <picture>
+                    <source media="(max-width: 576px)" srcset="./img/telas/compartilhar-mobile.png">
+                    <source media="(max-width: 992px)" srcset="./img/telas/compartilhar-tablet.png">
+                    <img src="./img/telas/compartilhar.png" alt="Compartilhe suas músicas nas suas redes sociais" width="540">
+                </picture>
+            </div>
+        </div>
+    </article>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
+
+<!-- <div class="comentario-usuario">
+                    <img src="./img/fotos/home/usuario-1.jpg" alt="">
+                    <p>Eu gosto muito da letra dessa música 🎼.</p>
+                </div>
+                <div class="comentario-usuario">
+                    <img src="./img/fotos/home/usuario-2.jpg" alt="">
+                    <p>Que música viciante, não paro de ouvir 🎶.</p>
+                </div>
+                <div class="comentario-usuario">
+                    <img src="./img/fotos/home/usuario-3.jpg" alt="">
+                    <p>Essa música é simplesmente sensacional 😍.</p>
+                </div>
+                <div class="comentario-usuario">
+                    <img src="./img/fotos/home/usuario-4.jpg" alt="">
+                    <p>Essa música é como uma terapia pra mim 😌.</p>
+                </div> -->
